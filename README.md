@@ -4,10 +4,10 @@ Welcome to the Exercise Website, a fully responsive web application built with R
 
 # Tech Stack
 
-Frontend: ReactJS, CSS(Tailwind)
-API: Rapid API Exercise API and Youtube Search API
-State Management: React Hooks (useState, useEffect)
-Routing: React Router
++ Frontend: ReactJS, CSS(Tailwind)
++ API: Rapid API Exercise API and Youtube Search API
++ State Management: React Hooks (useState, useEffect)
++ Routing: React Router
 
 # Demo ( Deployed on Netlify)
 
