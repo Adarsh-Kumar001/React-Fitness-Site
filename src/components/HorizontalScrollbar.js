@@ -10,7 +10,7 @@ const LeftArrow = () => {
     const { scrollPrev } = useContext(VisibilityContext);
   
     return (
-      <div onClick={() => scrollPrev()} className="right-arrow left-arrow w-10 h-48 mr-5 hover:cursor-pointer hover:bg-blue-800 rounded-xl p-1 mt-40 flex justify-center content-center ml-3">
+      <div onClick={() => scrollPrev()} className="right-arrow left-arrow w-10 h-48 mr-5 hover:cursor-pointer hover:bg-blue-800 rounded-xl p-1 mt-40 flex justify-center content-center ml-3 max-lg:invisible">
         <img className='my-auto' src={LeftArrowIcon} alt="right-arrow" />
       </div>
     );
@@ -20,7 +20,7 @@ const LeftArrow = () => {
     const { scrollNext } = useContext(VisibilityContext);
   
     return (
-      <div onClick={() => scrollNext()} className="left-arrow w-10 h-48 mr-5 hover:cursor-pointer hover:bg-blue-800 rounded-xl p-1 mt-40 flex justify-center content-center ml-3">
+      <div onClick={() => scrollNext()} className="left-arrow w-10 h-48 mr-5 hover:cursor-pointer hover:bg-blue-800 rounded-xl p-1 mt-40 flex justify-center content-center ml-3 max-lg:invisible">
         <img className='my-auto' src={RightArrowIcon} alt="right-arrow" />
       </div>
     );

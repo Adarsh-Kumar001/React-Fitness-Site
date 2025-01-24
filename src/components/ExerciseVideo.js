@@ -10,7 +10,7 @@ const ExerciseVideo = ({ exerciseName, exerciseVideos }) => {
 
   return (
     <div className='w-[full] bg-blue-500'>
-      <h1 className='w-[full] flex justify-center pt-10 mb-5 gap-2 text-yellow-300 font-bold text-3xl capitalize max-lg:text-2xl'><p className='text-white'>Some Videos Realted To </p>{exerciseName}</h1>
+      <h1 className='w-[full] flex justify-center pt-10 mb-5 gap-2 text-yellow-300 font-bold text-3xl capitalize max-lg:text-sm'><p className='text-white'>Some Videos Realted To </p>{exerciseName}</h1>
       <div className='w-[full] flex flex-wrap justify-center pb-10'>
 
         {exerciseVideos?.slice(0, 3).map((item, index) => (
@@ -20,10 +20,10 @@ const ExerciseVideo = ({ exerciseName, exerciseVideos }) => {
           href={`https://www.youtube.com/watch?v=${item.video.videoId}`} 
           target='_blank' 
           rel='noreferrer'
-          className='w-[30rem] h-[18rem] m-5'
+          className='w-[26rem] h-[14rem] m-5'
           >
-            <img className='w-[30rem] m-5 shadow-gray-600 shadow-xl max-lg:w-[25rem]' src={item.video.thumbnails[0].url} alt={item.video.title} /> 
-            <img className='w-20 relative bottom-[12rem] left-[14rem]' src={playIcon} alt='yt-logo'/>
+            <img className='w-[30rem] m-5 shadow-gray-600 shadow-xl max-lg:w-[20rem]' src={item.video.thumbnails[0].url} alt={item.video.title} /> 
+            <img className='w-20 relative bottom-[9.5rem] left-[9.5rem]' src={playIcon} alt='yt-logo'/>
           </a>
         ))}
 
